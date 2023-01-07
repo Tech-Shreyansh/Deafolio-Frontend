@@ -1,8 +1,10 @@
 import React from "react";
 import Logo from "../components/logo";
 import "./otp.css"
+import {useNavigate} from "react-router-dom";
 
 const OtpApp = () => {
+    const Navhandler = useNavigate()
     return<div>
         <Logo />
         <div id="otp">

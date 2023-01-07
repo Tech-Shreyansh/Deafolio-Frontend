@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "../components/logo";
 import illustration from "../images/illustration.svg";
 import "./signup.css"
+import {useNavigate} from "react-router-dom";
 
 const SignupApp = () => {
+    const Navhandler = useNavigate()
     return<div>
         <Logo />
         <img id="illustration" src={illustration} alt="Deaf winning the World" />
@@ -26,7 +28,7 @@ const SignupApp = () => {
             <p className="error" >Passwords must match</p>
             </div>
             <div id="log_btn">Sign Up</div>
-            <div id="footer_msg">Already have an account? <span>Log In</span></div>
+            <div id="footer_msg">Already have an account? <span onClick={() => Navhandler('/login')}>Log In</span></div>
         </div>
     </div>
 }

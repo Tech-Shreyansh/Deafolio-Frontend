@@ -2,8 +2,11 @@ import React from "react";
 import Logo from "../components/logo";
 import illustration from "../images/illustration.svg";
 import "./login.css"
+import {useNavigate} from "react-router-dom";
 
 const LoginApp = () => {
+    const Navhandler = useNavigate()
+
     return<div>
         <Logo />
         <img id="illustration" src={illustration} alt="Deaf winning the World" />
@@ -16,10 +19,10 @@ const LoginApp = () => {
             <div>
             <input placeholder="Enter your password"/>
             <p className="error" >Enter valid Password</p>
-            <pre>Forgot password?</pre>
+            <pre onClick={() => Navhandler('/forgot_password')}>Forgot password?</pre>
             </div>
             <div id="log_btn">Log In </div>
-            <div id="footer_msg">Don't have an account? <span>Sign Up</span></div>
+            <div id="footer_msg">Don't have an account? <span onClick={() => Navhandler('/signup')}>Sign Up</span></div>
         </div>
     </div>
 }

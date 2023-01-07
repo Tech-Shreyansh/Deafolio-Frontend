@@ -1,8 +1,10 @@
 import React from "react";
 import Logo from "../components/logo";
 import "./reset.css"
+import {useNavigate} from "react-router-dom";
 
 const ResetApp = () => {
+    const Navhandler = useNavigate()
     return<div>
         <Logo />
         <div id="reset">
@@ -19,7 +21,7 @@ const ResetApp = () => {
             <p className="error" >Passwords must match</p>
             </div>
             <div id="log_btn">Save</div>
-            <div id="cancel">Cancel</div>
+            <div id="cancel" onClick={() => Navhandler('/login')}>Cancel</div>
         </div>
     </div>
 }
