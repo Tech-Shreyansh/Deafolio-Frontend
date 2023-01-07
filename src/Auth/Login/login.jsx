@@ -8,7 +8,18 @@ const LoginApp = () => {
         <Logo />
         <img id="illustration" src={illustration} alt="Deaf winning the World" />
         <div id="login">
-            
+            <p id="log_head">Welcome to Deafolio</p>
+            <div>
+            <input placeholder="Enter your email address"/>
+            <p className="error" >Enter valid Email Address</p>
+            </div>
+            <div>
+            <input placeholder="Enter your password"/>
+            <p className="error" >Enter valid Password</p>
+            <pre>Forgot password?</pre>
+            </div>
+            <div id="log_btn">Log In </div>
+            <div id="footer_msg">Don't have an account? <span>Sign Up</span></div>
         </div>
     </div>
 }
