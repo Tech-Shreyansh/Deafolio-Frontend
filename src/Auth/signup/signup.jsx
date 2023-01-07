@@ -15,7 +15,7 @@ const SignupApp = () => {
             </div>
             <div>
             <input placeholder="Enter your Full Name"/>
-            <p className="error" >Enter valid Email Address</p>
+            <p className="error" >Enter valid Name</p>
             </div>
             <div>
             <input placeholder="Enter your password"/>
@@ -23,7 +23,7 @@ const SignupApp = () => {
             </div>
             <div>
             <input placeholder="Enter your Confirmed Password"/>
-            <p className="error" >Enter valid Email Address</p>
+            <p className="error" >Passwords must match</p>
             </div>
             <div id="log_btn">Sign Up</div>
             <div id="footer_msg">Already have an account? <span>Log In</span></div>
