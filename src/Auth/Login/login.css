@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Metal&display=swap");
-
-* {
-  font-family: "Roboto";
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@400;500&display=swap');
 #login {
   position: absolute;
   width: 35vw;
@@ -51,6 +47,7 @@ input {
   width: 11vw;
   color: #c1694f;
   cursor: pointer;
+  font-family: "Roboto";
 }
 
 #log_btn {
